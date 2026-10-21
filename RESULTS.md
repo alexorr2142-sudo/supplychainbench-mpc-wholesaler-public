@@ -6,7 +6,8 @@
 - **Concentrated gain.** Cost change by bucket (adaptive − frozen): shifted_mean_doubled_variance +256.5,
   in_distribution +3.5, canonical_held_out_step +4.0, burst_and_collapse −27.5 (worse). Total gain 236.5, of which two
   seeds carry 232.5 (141.0 and 91.5). Effective number of contributing seeds (Σ|g|)²/Σg² ≈ 3.2 of 16.
-- **Mixed on fresh seeds.** 100 fresh non-public seeds (25/bucket, independent reviewer's sha256 "verifier-fresh|bucket|i", disjoint
+- Note: "verifier-fresh" is just the label of the fresh-seed key; it is kept verbatim so the 100 seeds can be regenerated exactly.
+- **Mixed on fresh seeds.** 100 fresh non-public seeds (25/bucket, sha256 of the key "verifier-fresh|bucket|i", disjoint
   from all benchmark and design seeds; re-checked here): total cost −4.1% vs adaptive base-stock, paired gain 16.1 ± 3.8 SE,
   67/100 wins. By bucket: shifted_mean +7.8% better (24/25 wins), canonical +0.6% (25/25), in_distribution −1.8% worse
   (10/25), burst_and_collapse −2.3% worse (8/25).
