@@ -1,0 +1,26 @@
+{
+ "naive": {
+  "mean_total_supply_chain_cost": 1730.82,
+  "stderr": 58.1167227276802,
+  "bullwhip_ratio": 1.820560730022917,
+  "order_format_failure_rate": 0.0,
+  "episodes": 100,
+  "benchmark_score_0_to_100": 50.0
+ },
+ "repo_base_stock": {
+  "mean_total_supply_chain_cost": 1624.965,
+  "stderr": 43.38925194787252,
+  "bullwhip_ratio": 1.820560730022917,
+  "order_format_failure_rate": 0.0,
+  "episodes": 100,
+  "benchmark_score_0_to_100": 51.577201757561944
+ },
+ "scb_attempt_frozen": {
+  "mean_total_supply_chain_cost": 1624.965,
+  "stderr": 43.38925194787252,
+  "bullwhip_ratio": 1.820560730022917,
+  "order_format_failure_rate": 0.0,
+  "episodes": 100,
+  "benchmark_score_0_to_100": 51.577201757561944
+ }
+}
