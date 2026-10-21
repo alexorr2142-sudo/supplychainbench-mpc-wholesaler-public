@@ -1,4 +1,4 @@
-# [Draft — not submitted] Non-LLM wholesaler policy: 76.78 on `standard` (16/16 clean)
+# Non-LLM wholesaler policy: 76.78 on `standard` (16/16 clean)
 
 Submitter: Solved Supply Lab.
 
@@ -9,7 +9,7 @@ on fresh seeds are **mixed**:
 - The gain is concentrated: shifted_mean_doubled_variance +256.5 cost units, burst_and_collapse −27.5 (worse);
   two seeds carry 232.5 of the 236.5 total gain.
 - On 100 fresh seeds (25/bucket, disjoint from all benchmark seeds): −4.1% cost vs adaptive (16.1 ± 3.8 SE, 67/100 wins),
-  but worse in in_distribution (−1.8%) and burst_and_collapse (−2.3%); the gain comes from shifted_mean (+7.8%).
+  by bucket: shifted_mean +7.8%, canonical +0.6%, in_distribution −1.8% (worse), burst_and_collapse −2.3% (worse).
 - The 16 official seeds are public; we tuned only on separate fresh design seeds and ran the official suite once.
 - On the serial `eval/held_out_seeds.json` protocol it only matches the tuned base-stock (51.58).
 No LLM, no GPU, no API calls.
@@ -37,5 +37,5 @@ python official.py heldout                       # writes results/heldout_frozen
 The provider is injected by replacing `supplychainbench.eval.create_provider`; evaluator, environment and scoring are unmodified.
 
 ## License
-Our code: MIT (to be added with the submitter's copyright line). The benchmark (Supply_Chain_Bench) is MIT © 2026 Consti Ertel;
+Our code: MIT, © 2026 Solved Supply Lab (see LICENSE). The benchmark (Supply_Chain_Bench) is MIT © 2026 Consti Ertel;
 no upstream code is copied — we import it unmodified.
